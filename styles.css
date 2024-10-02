@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-wrap: wrap;
+}
+#logo{
+    width: 140px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+#checkbox{
+    display: none;
+}
+.icons{
+    font-size: 2rem;
+    color: black;
+    font-weight: 500;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+.list{
+    list-style: none;
+    display: inline;
+    margin: 0px 15px;
+}
+.items{
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 700;
+}
+.items:hover{
+    color: aqua;
+}
+#input{
+    border-radius: 100px;
+    padding: 5px;
+    background-color: aqua;
+    cursor: pointer;
+}
+#homepage{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+}
+#specialdiv{
+    width: 500px;
+}
+#girl{
+    border-radius: 30px;
+}
+.font1{
+    color: orange;
+    font-size: 20px;
+    font-weight: 500;
+}
+.font2{
+    font-size:60px;
+    font-weight: 700;
+}
+.explore{
+    background-color: orange;
+    width: 130px;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.explore:hover{
+    background-color: aqua;
+}
+.sectionhead{
+    margin-top: 60px;
+    text-align:center ;
+}
+.mainhead{
+    font-size: 50px;
+    font-weight: 600;
+}
+.subhead{
+    font-size: 23px;
+    color: orange;
+    font-weight: 600;
+}
+.destinations{
+    padding: 38px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    background-image: url(https://t4.ftcdn.net/jpg/03/01/44/23/360_F_301442391_r5NN2O6fFa4koeBRdwYSvCgeUe78987r.jpg);
+}
+.packages{
+    width: 250px;
+    height: 320px;
+    border: solid orange;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 33px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.placeimage{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.parent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 30px;
+}
+.services{
+    width: 250px;
+    height: 280px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 33px;
+    border: solid;
+    padding: 20px;
+}
+.services:hover{
+    background-color: orange;
+    border-color: aqua;
+}
+.flight{
+    width: 110px;
+}
+.subscribe{
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    background-image: url(https://img.freepik.com/free-photo/cartoon-style-character-traveling_23-2151129694.jpg);
+}
+#realhead{
+    font-size: 35px;
+    font-weight: 800;
+}
+.inputbox{
+    padding: 30px;
+}
+#email{
+    width: 280px;
+    height: 2.2rem;
+    border: white;
+    border-radius: 20px;
+}
+#emailbutton{
+    width: 100px;
+    height: 2.2rem;
+    border: solid black;
+    border-radius: 20px;
+    background-color: black;
+    cursor: pointer;
+}
+#emailbutton:hover{
+    background-color: orangered;
+    border: solid white;
+}
+#sub{
+    font-weight: 600;
+    color: white;
+}
+.agencies{
+    margin-top: 40px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#alitalia{
+    width: 120px;
+}
+#expedia{
+    width: 130px;
+}
+.footer{
+    width: 250px;
+    height: 280px;
+    text-align: center;
+    padding: 20px;
+    line-height: 33px;
+}
+#parentfooter{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+#i1,#i2,#i3{
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+.flink{
+    color: black;
+    text-decoration: none;
+}
+.flink:hover{
+    color: orangered;
+}
+.app{
+    cursor: pointer;
+}
+
+
+@media (max-width:992px){
+    .icons{
+        display: flex;
+    }
+    #closeicon{
+        display: none;
+    }
+    #checkbox:checked~.icons #menuicon{
+        display: none;
+    }
+    #checkbox:checked~.icons #closeicon{
+        display: block;
+    }
+    #checkbox:checked~.ultag{
+        display: block;
+    }
+    .ultag{
+        display: none;
+    }
+    .ultag .items{
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 1rem 0px;
+    }
+    #homepage{
+        flex-wrap: wrap;
+    }
+    .destinations{
+        flex-wrap: wrap;
+    }
+    .parent{
+        flex-wrap: wrap;
+    }
+    .agencies{
+        flex-wrap: wrap;
+    }
+    #parentfooter{
+        flex-wrap: wrap;
+    }
+    #girl{
+        width: 600px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:692px){
+    #girl{
+        width: 500px;
+    }
+}
+@media (max-width:592px){
+    #girl{
+        width: 400px;
+    }
+}
